@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+    <base href="../">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <title>Marketop &ndash; HTML Bootstrap 5 eCommerce Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="assets/fonts/icons.css">
+    <link rel="stylesheet" href="vendors/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/styles.bundle.css">
+</head>
+<!-- Head -->
+
+<!-- Body -->
+<body>
+    <!-- Layout -->
+    <div class="bg-light">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom fw-bold bg-white" style="z-index: 3">
+            <div class="container-fluid">
+                <a class="logo m-3" href="../index.html">
+                    <img src="assets/img/logo/logo-mobile.png" style="width:32px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDoc" aria-controls="navbarDoc" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarDoc">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="documentation/index.html">Introduction</a></li>
+                        <li class="nav-item"><a class="nav-link" href="documentation/changelog.html">Changelog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="documentation/index.html#support">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-auto bg-white border-end hide-scrollbar" style="z-index: 2;position: fixed;top: 73px;height: calc(100% - 73px);overflow: auto;">
+                    <div class="p-5">
+                        <h5 class="mb-4 text-uppercase ls-1 fs-7">Getting started</h5>
+                        <ul class="list-unstyled mb-6">
+                            <li class="list-item mb-2">
+                                <a class="text-muted" href="documentation/index.html">Introduction</a>
+                            </li>
+                            <li class="list-item d-flex align-items-center justify-content-between ">
+                                <a class="text-muted" href="documentation/changelog.html">Changelog</a>
+                                <span class="badge bg-success ms-2">1.0</span>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+                <!-- Sidebar -->
+
+                <!-- Content -->
+                <div class="col-auto bg-light" style="position: fixed;left: 243px;right: 0px;top: 73px;height: calc(100% - 73px);overflow: auto;">
+                    <div class="p-8">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card p-8">
+                                        <div class="card-body">
+                                            <h2>Introduction</h2>
+                                            <p class="lead fs-5 mb-2">Hello, you are looking at documentation for Marketop &ndash; HTML Bootstrap 5 eCommerce Template. You will learn how to setup workspace, build and customize theme.</p>
+                                            <p>Since this theme is based on Bootstrap, you should check the <a class="link-info" href="https://getbootstrap.com/">official framework documentation</a> before continuing.</p>
+                                            <hr class="my-8">
+                                            <h3>Node.js</h3>
+                                            <p>To be able to use the Gulp you need to download and install Node.js from the <a class="link-info" href="https://nodejs.org/">official site.</a> The suggested version to install is <code>16.15.x LTS</code>.</p>
+                                            <hr class="my-8">
+                                            <h3>Gulpfile.js</h3>
+                                            <p>Install Gulp Command Line Interface globally to use gulp in your terminal.</p>
+                                            <div class="py-4">
+                                                <div class="highlight">
+                                                    <div class="highlight-code">
+                                                        <pre class="language-bash">
+<code class="language-bash">npm install gulp-cli -g</code>
+</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="my-8 bg-secondary">
+                                            <h3>NPM modules</h3>
+                                            <p>When you’re done, make sure you’ve installed the rest of the themes dependencies:</p>
+                                            <div class="py-4">
+                                                <div class="highlight">
+                                                    <div class="highlight-code">
+                                                        <pre class="language-bash">
+<code class="language-bash">npm install</code>
+</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="my-8 bg-secondary">
+                                            <h3>Gulp</h3>
+                                            <p>Now, modify your <code>SCSS</code> and <code>HTML</code> source files and run <code>npm run dev</code> command in terminal for development or <code>npm run build</code> to build final production version of template. Use <code>gulp</code> command for quick start development. The <code>BrowserSync</code> plugin will open default browser and show result of editing. When you are done just hit <kbd>Ctrl + C</kbd> or close terminal to stop <code>BrowserSync</code> server. If nessesary use <code>gulp clean</code> to clean up assets folder.</p>
+                                            <div class="py-4">
+                                                <div class="highlight">
+                                                    <div class="highlight-code">
+                                                        <pre class="language-bash">
+<code class="language-bash">npm run dev</code>
+</pre>
+                                                        <pre class="language-bash">
+<code class="language-bash">npm run build</code>
+</pre>
+                                                        <pre class="language-bash">
+<code class="language-bash">gulp</code>
+</pre>
+                                                        <pre class="language-bash">
+<code class="language-bash">gulp clean</code>
+</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="my-8">
+                                            <h3>SCSS customizing</h3>
+                                            <p>To ensure correct future updates you can edit three files:</p>
+                                            <ul>
+                                                <li>
+                                                    <code>custom-variables.scss</code>: these files can be used to override Bootstrap and the template variables.
+                                                </li>
+                                                <li>
+                                                    <code>custom.scss</code>: this file can be used for writing custom SCSS.
+                                                </li>
+                                            </ul>
+                                            <hr class="my-8">
+                                            <h3 id="support">Support</h3>
+                                            <p>To get help for this template please email to: realthemeshelp(at)gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content -->
+            </div>
+        </div>
+    </div>
+    <!-- Layout -->
+
+    <!-- Javascript -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+    <script src="assets/js/app.bundle.js"></script>
+    <!-- Javascript -->
+</body>
+<!-- Body -->
+</html>
